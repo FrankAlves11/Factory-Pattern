@@ -7,8 +7,8 @@
             Console.WriteLine("What type of vehicle do you want to make? Car or Motorcycle?!?");
             string userInput = Console.ReadLine();
 
-            VehicleFactory factory = new VehicleFactory();
-            IVehicles myVehicle = factory.CreateVehicle(userInput);
+          
+            IVehicles myVehicle = VehicleFactory.CreateVehicle(userInput);
 
             myVehicle.Drive();
        
@@ -17,8 +17,8 @@
             userInput = Console.ReadLine();
 
 
-            VehicleFactory factory2 = new VehicleFactory();
-            IVehicles myVehicle2 = factory2.CreateVehicle(userInput);
+            
+            IVehicles myVehicle2 = VehicleFactory.CreateVehicle(userInput);
             myVehicle2.Drive();
 
 

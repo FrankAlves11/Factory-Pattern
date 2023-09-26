@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    internal class VehicleFactory
+    internal static class VehicleFactory
     {
-        public IVehicles CreateVehicle(string userInput)
+        public static IVehicles CreateVehicle(string userInput)
         {
             switch (userInput.ToLower())
             {
